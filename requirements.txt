@@ -1,8 +1,26 @@
-flask==2.0.1
-python-ldap==3.4.0
-flask-login==0.5.0
-werkzeug==2.0.1
-python-dotenv==0.19.0
+# Web Framework
+Flask==2.0.1
+Werkzeug==2.0.1
+
+# User Authentication & Session Management
+Flask-Login==0.5.0
+
+# Two-Factor Authentication
 pyotp==2.8.0
-qrcode==7.3.1
+qrcode[pil]==7.3.1
+
+# User Agent Parsing (for activity logs)
 user-agents==2.2.0
+
+# Environment Variables Management
+python-dotenv==0.19.0
+
+# LDAP Integration (legacy support)
+python-ldap==3.4.0
+
+# Additional Dependencies (auto-installed with above packages)
+# Jinja2>=2.11.3 (Flask dependency)
+# click>=7.1.2 (Flask dependency)
+# itsdangerous>=2.0 (Flask dependency)
+# Pillow>=8.0.0 (qrcode[pil] dependency)
+# pypng>=0.0.20 (qrcode dependency)
